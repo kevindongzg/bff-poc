@@ -1,0 +1,13 @@
+{
+  "restartable": "rs",
+  "ignore": [
+    ".git",
+    "node_modules/**/node_modules"
+  ],
+  "verbose": true,
+  "exec": "TS_NODE_FILES=true node --inspect -r ts-node/register",
+  "watch": [
+    "server/"
+  ],
+  "ext": "js json ts"
+}
