@@ -1,7 +1,7 @@
-import Router from 'koa-router'
-import glob from 'glob'
+import * as Router from 'koa-router'
+import * as glob from 'glob'
 import { resolve } from 'path'
-import _ from 'lodash'
+import * as _ from 'lodash'
 const symbolPrefix = Symbol('prefix')
 const routerMap = new Map
 

@@ -1,6 +1,7 @@
-import Koa from "koa";
+
+import * as Koa from "koa";
 import { resolve } from "path";
-import R from "ramda";
+import * as R from "ramda";
 const MIDDLEWARES = ["common", "router"];
 
 const useMiddlewares = (app) => {

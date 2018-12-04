@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "main": "./server/index.ts",
   "scripts": {
-    "start": "NODE_ENV=development nodemon ./server/index.ts",
+    "start": "NODE_ENV=development nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "bff"
   ],
-  "author": "TW-Dev-Dong_Zhigang",
+  "author": "ThoughtWorks",
   "dependencies": {
     "@types/glob": "^7.1.1",
     "@types/koa": "^2.0.47",

@@ -3,7 +3,7 @@ import {
   get
 } from '../lib/decorator'
 
-import rp from 'request-promise-native'
+import * as rp from 'request-promise-native'
 
 @controller('/api')
 export class testController {
