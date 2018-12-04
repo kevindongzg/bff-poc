@@ -9,7 +9,7 @@ import rp from 'request-promise-native'
 export class testController {
   @get('/test')
   async getTest(ctx, next) {
-    const url = `http://localhost:8080/api/cruises/detail?seo=serena-2018-12-15`
+    const url = `https://qa.costachina.com/api/cruises/SE05190205/detail`
     let body
     let options = {
       method: 'GET',
