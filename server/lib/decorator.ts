@@ -21,14 +21,14 @@ export class Route {
   init() {
     glob.sync(resolve(this.apiPath, './**/*.ts')).forEach(require)
 
-    for (let [conf, controller] of routerMap) {
+    routerMap.forEach((controller, conf) => {
       const controllers = isArray(controller)
       let prefixPath = conf.target[symbolPrefix]
       if (prefixPath) prefixPath = normalizePath(prefixPath)
       const routerPath = prefixPath + conf.path
       this.router[conf.method](routerPath, ...controllers)
-    }
-
+    })
+    
     this.app.use(this.router.routes())
     this.app.use(this.router.allowedMethods())
   }
